@@ -1,7 +1,7 @@
 .carousel-image-wrapper {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 .carousel-image-wrapper::before {
   content: "";
@@ -33,4 +33,33 @@
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.size-faq {
+  height: 400px;
+}
+.size-faq h3 {
+  font-size: 40px;
+}
+.faq-background {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 1;
+  font-size: 200px;
+  font-weight: 800;
+  opacity: 0.3;
+  top: 50px;
+  bottom: 10px;
+}
+.variantWhite {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 100px;
 }

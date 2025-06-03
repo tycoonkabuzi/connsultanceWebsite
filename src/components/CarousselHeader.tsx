@@ -7,7 +7,7 @@ function CarousselHeader() {
   return (
     <Carousel data-bs-theme="light">
       <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100" src={car1} alt="First slide" />
+        <img className="d-block w-100 " src={car1} alt="First slide" />
         <Carousel.Caption className="centerCaption">
           <h1>Taking Businesses Global Profitably</h1>
           <p>
