@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import car1 from "../assets/car1.jpg";
-import car2 from "../assets/car2.jpg";
-import car3 from "../assets/car3.jpg";
+import car1 from "../assets/pexels-aaditya-arora-188236-592753.jpg";
+import car2 from "../assets/pexels-olly-3769138.jpg";
+import car3 from "../assets/pexels-pixabay-41949.jpg";
 import car4 from "../assets/car4.jpg";
 function CarousselHeader() {
   return (

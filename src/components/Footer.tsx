@@ -35,7 +35,7 @@ function Footer() {
             <Form.Label>Email address</Form.Label>
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
-          <Button variant="primary"> Subscribe</Button>
+          <Button className="btn-standard"> Subscribe</Button>
         </Form>
       </div>
 
