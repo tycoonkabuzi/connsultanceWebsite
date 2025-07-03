@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import logo from "../../src/assets/Logo PNG_Plan de travail 1 copie.png";
 
 function Footer() {
   const generateDate = () => {
@@ -8,10 +9,14 @@ function Footer() {
   };
   generateDate();
   return (
-    <div>
+    <div style={{ backgroundColor: "#39d1b8" }}>
       <div className="footer">
         <div>
-          <h2>John Consulting</h2>
+          <img
+            style={{ width: "400px", marginBottom: "50px" }}
+            src={logo}
+            alt="logo picture"
+          />
           <p>9800 MacArthur Blvd. Suite 300, Irvine, California 92612</p>
           <p>Phone: +243 934 234 234</p>
           <p>Email: info@johnConsulting.com</p>
@@ -40,8 +45,7 @@ function Footer() {
       </div>
 
       <p style={{ textAlign: "center" }}>
-        {" "}
-        &copy;copyrights John Consulting {generateDate()}
+        &copy;copyrights Global Growth Solutions {generateDate()}
       </p>
     </div>
   );

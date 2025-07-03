@@ -82,6 +82,10 @@
 .btn-standard:hover {
   background-color: #217365;
 }
+.btn-outline {
+  border-color: #217365;
+  color: #217365;
+}
 .team-container {
   padding: 12px;
 }
@@ -138,4 +142,133 @@
 
 .member-description p {
   color: #473d3c;
+}
+/*----------------------about----------------*/
+
+.mainPagesHeader {
+}
+.image-header-container {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-header-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-color: #473d3c;
+  z-index: 1;
+  opacity: 0.8;
+}
+.image-header-container img {
+  width: 100%;
+}
+
+.text-header-container {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 200px;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  color: white;
+}
+.main-network {
+  background-image: url("../src/assets/car1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0px 100px;
+}
+.network-box {
+  width: 40%;
+  padding: 100px;
+  margin: auto;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.network-box::before {
+  content: "";
+  position: absolute;
+  background-color: #39d1b8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+.network-box > * {
+  position: relative;
+  z-index: 2;
+}
+.show-case-service {
+  background-color: #39d1b8;
+  color: white;
+}
+.main-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.main-left {
+  background-color: #39d1b8;
+  width: 40%;
+  position: relative;
+}
+.main-right {
+  padding: 100px;
+  width: 50%;
+}
+.container-image-steps {
+  width: 40%;
+  height: 30vh;
+  overflow: hidden;
+  position: absolute;
+  bottom: 30%;
+  left: 70%;
+}
+.container-image-steps img {
+  width: 100%;
+}
+.bottom-text-steps {
+  background-color: #39d1b8;
+  width: 100%;
+  height: 70vh;
+}
+.box-text-steps {
+  background-color: #473d3c;
+  width: 40%;
+  padding: 50px;
+  position: absolute;
+  left: 30%;
+  right: 0;
+  bottom: -100%;
+  color: white;
+}
+.second-part {
+  width: 30%;
+}
+.second {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.second img {
+  width: 100%;
+}
+.main-contact-development {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 50px;
 }
