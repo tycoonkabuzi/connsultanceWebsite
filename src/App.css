@@ -251,7 +251,7 @@
   position: absolute;
   left: 30%;
   right: 0;
-  bottom: -100%;
+  bottom: -120%;
   color: white;
 }
 .second-part {
@@ -271,4 +271,45 @@
   width: 80%;
   margin: auto;
   padding: 50px;
+}
+.main-overview-services {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.main-service-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.service-picture {
+  width: 50%;
+  height: 60vh;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.service-picture img {
+  width: 100%;
+}
+
+.service-text {
+  width: 40%;
+}
+.main-contact-service {
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: #39d1b8;
 }
