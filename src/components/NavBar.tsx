@@ -36,13 +36,19 @@ function NavBar() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Strategic Advisory Services</Link>
+              <Link className="link" to="/strategic">
+                Strategic Advisory Services
+              </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Clients</Link>
+              <Link className="link" to="">
+                Clients
+              </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Contact</Link>
+              <Link className="link" to="">
+                Contact
+              </Link>
             </Nav.Link>
           </Nav>
         </Container>

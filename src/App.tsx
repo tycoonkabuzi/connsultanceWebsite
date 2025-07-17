@@ -5,6 +5,7 @@ import Home from "./layouts/Home";
 import About from "./layouts/About";
 import Development from "./layouts/Development";
 import Services from "./layouts/Services";
+import StrategicAdvisory from "./layouts/StrategicAdisory";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/development" element={<Development />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/strategic" element={<StrategicAdvisory />} />
       </Routes>
     </>
   );
