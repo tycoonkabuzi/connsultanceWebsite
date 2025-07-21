@@ -65,6 +65,7 @@
 .nav-element {
   background-color: #fae0d0;
   color: #473d3c;
+  position: relative;
 }
 
 .footer {
@@ -212,6 +213,7 @@
 .show-case-service {
   background-color: #39d1b8;
   color: white;
+  padding: 5%;
 }
 .main-steps {
   display: flex;
@@ -325,6 +327,10 @@
 .main_offers {
   padding: 5%;
 }
+
+.main_offers h2 {
+  text-align: center;
+}
 .offers {
   display: flex;
   align-items: center;
@@ -334,4 +340,32 @@
   width: 50%;
   margin: auto;
   padding: 5%;
+}
+.main_how h2 {
+  text-align: center;
+}
+.main_drop_down {
+  background-color: #fae0d0;
+  width: 15%;
+
+  position: absolute;
+  top: 100%;
+  left: 57%;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.main_drop_down.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main_drop_down.visible-language {
+  width: 5%;
+  padding: 0;
+  left: 88%;
+  opacity: 1;
+  visibility: visible;
 }
