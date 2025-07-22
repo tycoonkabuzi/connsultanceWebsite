@@ -1,53 +1,31 @@
 import Carousel from "react-bootstrap/Carousel";
+import { useLanguage } from "../context/LanguageProvider";
 
 function Testimony() {
+  const { language, translation } = useLanguage();
   return (
     <Carousel data-bs-theme="light">
       <Carousel.Item className="carousel-wrapper">
         <Carousel.Caption className="centerCaption">
-          <h1>Testimonials</h1>
-          <p>
-            One reason we work with EGS is because they are the only
-            international franchise consultants with a proven, trademarked going
-            global process. Ned Lyerly
-          </p>
-          <p>CEO, CKE Restaurants</p>
+          <h1>{translation[language].testimonials.title}</h1>
+          <p>{translation[language].testimonials.firstTestimony.paragraph}</p>
+          <p>{translation[language].testimonials.firstTestimony.client}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="carousel-wrapper">
         <Carousel.Caption className="centerCaption">
-          <h1>Testimonials</h1>
-          <p>
-            One reason we work with EGS is because they are the only
-            international franchise consultants with a proven, trademarked going
-            global process. Ned Lyerly
-          </p>
-          <p>CEO, CKE Restaurants</p>
+          <h1>{translation[language].testimonials.title}</h1>
+          <p>{translation[language].testimonials.firstTestimony.paragraph}</p>
+          <p>{translation[language].testimonials.firstTestimony.client}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="carousel-wrapper">
         <Carousel.Caption className="centerCaption">
-          <h1>Testimonials</h1>
-          <p>
-            One reason we work with EGS is because they are the only
-            international franchise consultants with a proven, trademarked going
-            global process. Ned Lyerly
-          </p>
-          <p>CEO, CKE Restaurants</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item className="carousel-wrapper">
-        <Carousel.Caption className="centerCaption">
-          <h1>Testimonials</h1>
-          <p>
-            One reason we work with EGS is because they are the only
-            international franchise consultants with a proven, trademarked going
-            global process. Ned Lyerly
-          </p>
-          <p>CEO, CKE Restaurants</p>
+          <h1>{translation[language].testimonials.title}</h1>
+          <p>{translation[language].testimonials.firstTestimony.paragraph}</p>
+          <p>{translation[language].testimonials.firstTestimony.client}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
