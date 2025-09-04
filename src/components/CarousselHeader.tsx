@@ -11,31 +11,31 @@ function CarousselHeader() {
       <Carousel.Item className="carousel-image-wrapper">
         <img className="d-block w-100 " src={car1} alt="First slide" />
         <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitle}</h1>
-          <p>{translation[language].carrouselParagraph}</p>
+          <h1>{translation[language].carrouselTitleOne}</h1>
+          <p>{translation[language].carrouselParagraphOne}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car1} alt="First slide" />
+        <img className="d-block w-100 " src={car2} alt="First slide" />
         <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitle}</h1>
-          <p>{translation[language].carrouselParagraph}</p>
+          <h1>{translation[language].carrouselTitleTwo}</h1>
+          <p>{translation[language].carrouselParagraphTwo}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car1} alt="First slide" />
+        <img className="d-block w-100 " src={car3} alt="First slide" />
         <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitle}</h1>
-          <p>{translation[language].carrouselParagraph}</p>
+          <h1>{translation[language].carrouselTitleThree}</h1>
+          <p>{translation[language].carrouselParagraphThree}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car1} alt="First slide" />
+        <img className="d-block w-100 " src={car4} alt="First slide" />
         <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitle}</h1>
-          <p>{translation[language].carrouselParagraph}</p>
+          <h1>{translation[language].carrouselTitleFour}</h1>
+          <p>{translation[language].carrouselParagraphFour}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

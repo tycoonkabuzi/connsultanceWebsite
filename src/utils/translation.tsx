@@ -12,9 +12,23 @@ export const translation = {
     // ------------ Nav-----------------
 
     // ------------ Home -----------------
-    carrouselTitle: "Taking Businesses Global Profitably",
-    carrouselParagraph:
-      "With more than four extraordinary decades of successful international business experience spanning virtually every corner of the world and many business sectors, EGS understands the global business landscape like no other. We are uniquely qualified to steer executives successfully through the complexities of Going Global with the help of our expert international business consulting services.",
+    carrouselTitleOne:
+      "Global Growth Solutions: Expert Strategies for International Expansion and Innovation",
+    carrouselParagraphOne:
+      "With extensive international experience across multiple industries and markets, Global Growth Solutions understands the global business landscape like no other. We are uniquely positioned to guide businesses and governments through the complexities of global expansion, innovation, and growth with our expert consulting and strategic solutions",
+
+    carrouselTitleTwo: "Shaping the Future of Global Business",
+    carrouselParagraphTwo:
+      "From market entry to sustainable growth, we provide the insights and strategies that empower organizations to thrive. Our solutions are built on innovation, adaptability, and a deep understanding of international business dynamics.",
+    carrouselTitleThree: "Strategic Solutions for Lasting Impact",
+
+    carrouselParagraphThree:
+      "We partner with businesses and governments to design and implement strategies that deliver measurable results. By combining global expertise with local insights, we ensure sustainable success across industries and regions.",
+
+    carrouselTitleFour: "Your Partner in Transformation and Growth",
+    carrouselParagraphFour:
+      "In a rapidly changing world, we guide organizations through complex challenges with clarity and confidence. Our tailored solutions enable innovation, strengthen competitiveness, and unlock new opportunities for growth.",
+    //-------------
 
     serviceComponentTitle: "Services",
     serviceComponentParagraph:
@@ -66,10 +80,24 @@ export const translation = {
     // ------------ Nav-----------------
 
     // ------------ Home -----------------
-    carrouselTitle:
-      "Faire croître les entreprises à l'international de manière rentable",
-    carrouselParagraph:
-      "Avec plus de quatre décennies exceptionnelles d'expérience réussie dans les affaires internationales, couvrant pratiquement tous les coins du monde et de nombreux secteurs d'activité, EGS comprend le paysage commercial mondial comme nul autre. Nous sommes particulièrement qualifiés pour guider efficacement les dirigeants à travers les complexités de l'internationalisation grâce à nos services de conseil spécialisés en commerce international.",
+
+    carrouselTitleOne:
+      "Global Growth Solutions : Des stratégies expertes pour l’expansion et l’innovation internationales",
+    carrouselParagraphOne:
+      "Avec une vaste expérience internationale couvrant de multiples secteurs et marchés, Global Growth Solutions comprend le paysage mondial des affaires comme nul autre. Nous sommes idéalement positionnés pour guider les entreprises et les gouvernements à travers les complexités de l’expansion mondiale, de l’innovation et de la croissance grâce à nos services de conseil et à nos solutions stratégiques expertes.",
+
+    carrouselTitleTwo: "Façonner l’avenir du commerce mondial",
+    carrouselParagraphTwo:
+      "De l’entrée sur le marché à une croissance durable, nous fournissons les analyses et les stratégies qui permettent aux organisations de prospérer. Nos solutions reposent sur l’innovation, l’adaptabilité et une compréhension approfondie des dynamiques du commerce international.",
+
+    carrouselTitleThree: "Des solutions stratégiques pour un impact durable",
+    carrouselParagraphThree:
+      "Nous collaborons avec les entreprises et les gouvernements pour concevoir et mettre en œuvre des stratégies qui génèrent des résultats mesurables. En combinant une expertise mondiale et des connaissances locales, nous assurons un succès durable à travers les industries et les régions.",
+
+    carrouselTitleFour: "Votre partenaire en transformation et en croissance",
+    carrouselParagraphFour:
+      "Dans un monde en constante évolution, nous guidons les organisations à travers des défis complexes avec clarté et confiance. Nos solutions personnalisées favorisent l’innovation, renforcent la compétitivité et ouvrent de nouvelles perspectives de croissance.",
+
     serviceComponentTitle: "Services",
     serviceComponentParagraph:
       "Edwards Global Services, Inc. (EGS) exporte des entreprises à travers le monde en fournissant des services de conseil en affaires internationales, y compris des recherches complètes de marchés internationaux, des solutions opérationnelles et de développement pour nos clients. De la recherche de marché initiale à la priorisation des pays, au développement de nouveaux marchés internationaux, jusqu’au soutien opérationnel dans le monde entier, EGS offre une solution complète pour réussir à l’international.",
