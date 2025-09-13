@@ -8,15 +8,16 @@ import TradeDevelopment from "../components/TradeDevelopment";
 import ShowCaseService from "../components/ShowCaseService";
 
 import background from "../assets/car4.jpg";
+import { useLanguage } from "../context/LanguageProvider";
 const About = () => {
-  const title = "About";
-  const paragraph = " Why Companies Choose EGS to Take Them Global";
+  const { language, translation } = useLanguage();
+
   return (
     <div>
       <NavBar />
       <SecondaryPagesHeader
-        title={title}
-        paragraph={paragraph}
+        title={translation[language].titleAbout}
+        paragraph={translation[language].paragraphAbout}
         background={background}
       />
       <ExperienceProcess />

@@ -9,12 +9,13 @@ import StrategicAdvisory from "./layouts/StrategicAdisory";
 
 import SectorServices from "./layouts/SectorServices";
 import { LanguageProvider } from "./context/LanguageProvider";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
   return (
     <LanguageProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<ComingSoon />} />
         <Route path="/about" element={<About />} />
         <Route path="/development" element={<Development />} />
         <Route path="/services" element={<Services />} />

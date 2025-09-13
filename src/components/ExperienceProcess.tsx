@@ -8,12 +8,16 @@ const ExperienceProcess = () => {
       <Container className="section">
         <Row>
           <Col>
-            <h2>Experience</h2>
+            <h2>Why Clients Choose GGS to Grow, Expand, and Lead</h2>
             <p>
-              Experience EGS’ U.S.-based executives have lived in 13 countries
-              and have 100+ years of international executive operating
-              experience in over 60 countries, across many business sectors and
-              cultures.
+              Global Growth Solutions (GGS) is not just another consultancy — we
+              are your strategic partner in global market expansion,
+              public-private transformation, and high-impact representation.
+              What sets us apart is our hands-on leadership, tailored solutions,
+              and a deep understanding of both the African opportunity and the
+              global business landscape. Whether you're a company looking to
+              scale internationally, or a government aiming to attract
+              investment and digitize public services — GGS delivers results.
             </p>
             <Button className="btn-outline" variant="outline-primary">
               Learn more
@@ -29,11 +33,20 @@ const ExperienceProcess = () => {
             <img src={car3} alt="" />
           </Col>
           <Col>
-            <h2>Process</h2>
+            <h2>Experience That Crosses Borders</h2>
             <p>
-              Our processes are defined, proven, and trademarked, and our team
-              is return on investment (ROI)-focused so that you are successful
-              earlier and for the long-term
+              Our founder and core team bring real-world experience, not just
+              theory. We’ve worked across public and private sectors in Europe,
+              Africa, and Asia. We know what it takes to enter new markets,
+              navigate regulations, and build long-term value from the ground
+              up.
+              <ul>
+                <li>Work grounded in various countries</li>
+                <li>
+                  Insights from both multinational firms and frontier economies
+                </li>
+                <li>Private, public, and development sector exposure</li>
+              </ul>
             </p>
             <Button className="btn-outline" variant="outline-primary">
               Learn more

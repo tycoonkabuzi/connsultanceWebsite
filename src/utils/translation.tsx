@@ -11,6 +11,11 @@ export const translation = {
     navContact: "Contact",
     // ------------ Nav-----------------
 
+    //-------- headerSmallTitle
+
+    titleAbout: "About",
+    paragraphAbout:
+      "Your partner for international expansion, digital transformation, and revenue growth",
     // ------------ Home -----------------
     carrouselTitleOne:
       "Global Growth Solutions: Expert Strategies for International Expansion and Innovation",
@@ -78,6 +83,14 @@ export const translation = {
     navClients: "Clients",
     navContact: "Contact",
     // ------------ Nav-----------------
+
+    //-------- headerSmallTitle
+
+    //-------- headerSmallTitle
+
+    titleAbout: "À propos",
+    paragraphAbout:
+      "Votre partenaire pour l’expansion internationale, la transformation numérique et la croissance des revenus",
 
     // ------------ Home -----------------
 

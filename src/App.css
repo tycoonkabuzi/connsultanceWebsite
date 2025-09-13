@@ -369,3 +369,62 @@
   opacity: 1;
   visibility: visible;
 }
+
+.main-coming-soon {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio, fills screen */
+  z-index: -1; /* puts video behind text */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  background-color: #39d1b821;
+  padding-top: 10%;
+  height: 100vh;
+  margin: auto;
+}
+.container-image {
+  width: 10%;
+  margin: auto;
+}
+.container-image img {
+  width: 100%;
+}
+.content h1 {
+  font-weight: 800;
+  font-size: 70px;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between items */
+  margin-top: 30px;
+}
+.countdown-item {
+  background-color: #39d1b875;
+  padding: 40px;
+  line-height: 30px;
+}
+.countdown-number {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+footer {
+  margin-top: 100px;
+  font-size: 12px;
+}
