@@ -410,6 +410,7 @@
 }
 .countdown {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* space between items */
   margin-top: 30px;
