@@ -10,17 +10,21 @@ import StrategicAdvisory from "./layouts/StrategicAdisory";
 import SectorServices from "./layouts/SectorServices";
 import { LanguageProvider } from "./context/LanguageProvider";
 import ComingSoon from "./components/ComingSoon";
+import Contact from "./layouts/Contact";
+import Clients from "./layouts/Clients";
 
 function App() {
   return (
     <LanguageProvider>
       <Routes>
-        <Route path="/" element={<ComingSoon />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/development" element={<Development />} />
         <Route path="/services" element={<Services />} />
         <Route path="/strategic" element={<StrategicAdvisory />} />
         <Route path="/sector" element={<SectorServices />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
     </LanguageProvider>
   );

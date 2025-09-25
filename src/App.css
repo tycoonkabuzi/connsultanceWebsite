@@ -429,3 +429,311 @@ footer {
   margin-top: 100px;
   font-size: 12px;
 }
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #f9fafe;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.info-item svg {
+  color: #0077ff;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fdfdfd;
+  transition: border 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.btn-submit {
+  align-self: flex-start;
+  padding: 0.9rem 1.5rem;
+  background: #0077ff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #005fcc;
+}
+.clients-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* General Section Styling */
+.clients-page section {
+  margin-bottom: 4rem;
+}
+
+.clients-page h1,
+.clients-page h2,
+.clients-page h3 {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.clients-page h1 {
+  font-size: 2.4rem;
+  color: #0a2a43;
+  text-align: center;
+}
+
+.clients-page h2 {
+  font-size: 1.8rem;
+  color: #0a2a43;
+}
+
+.clients-page h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  color: #0056a3;
+}
+
+.clients-page p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.clients-hero {
+  text-align: center;
+  padding: 2rem;
+  background: #f5faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.clients-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content Sections */
+.clients-section {
+  background: #fff;
+  border-left: 5px solid #0077ff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.clients-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.clients-section li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  color: #333;
+}
+
+.clients-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077ff;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+/* Logos Grid */
+.clients-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.logo-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.logo-card span {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Testimonials */
+.clients-testimonials {
+  text-align: center;
+}
+
+.clients-testimonials h2 {
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #f9fafe;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0077ff;
+}
+
+.public-sector-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.service-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0077ff;
+}
+
+.service-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.service-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-section li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.service-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077ff;
+}

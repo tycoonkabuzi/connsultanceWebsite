@@ -53,12 +53,12 @@ function NavBar() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link" to="">
+              <Link className="link" to="/clients">
                 {translation[language].navClients}
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link" to="">
+              <Link className="link" to="/contact">
                 {translation[language].navContact}
               </Link>
             </Nav.Link>

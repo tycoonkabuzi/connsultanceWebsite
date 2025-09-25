@@ -19,7 +19,7 @@ function Footer() {
           />
           <p>9800 MacArthur Blvd. Suite 300, Irvine, California 92612</p>
           <p>Phone: +243 934 234 234</p>
-          <p>Email: info@johnConsulting.com</p>
+          <p>Email: info@globalgrowthsolutions.org</p>
         </div>
 
         <ul style={{ listStyle: "none" }}>

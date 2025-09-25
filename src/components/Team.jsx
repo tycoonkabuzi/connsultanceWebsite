@@ -18,53 +18,28 @@ const Team = () => {
             <Image src={image1} className="image" />
           </div>
           <div className="member-description">
-            <h2>Esther Kamba</h2>
-            <p> Writer</p>
+            <h2>Fabien John Tube </h2>
+            <p>Secretary</p>
           </div>
         </Col>
-        <Col xs={6} md={4} className="team-item">
-          <div className="image-container">
-            <Image src={image2} className="image" />
-          </div>
-          <div className="member-description">
-            <h2>Mamy Bali</h2>
-            <p> C.E.O</p>
-          </div>
-        </Col>
-        <Col xs={6} md={4} className="team-item">
-          <div className="image-container">
-            <Image src={image3} className="image" />
-          </div>
-          <div className="member-description">
-            <h2>ISMAEL Lumbi</h2>
-            <p> C.E.O</p>
-          </div>
-        </Col>
-        <Col xs={6} md={4} className="team-item">
-          <div className="image-container">
-            <Image src={image4} className="image" />
-          </div>
-          <div className="member-description">
-            <h2>Samy Amina</h2>
-            <p> P.A</p>
-          </div>
-        </Col>
-        <Col xs={6} md={4} className="team-item">
-          <div className="image-container">
-            <Image src={image2} className="image" />
-          </div>
-          <div className="member-description">
-            <h2>John Tube</h2>
-            <p> C.E.O</p>
-          </div>
-        </Col>
+
         <Col xs={6} md={4} className="team-item">
           <div className="image-container">
             <Image src={image1} className="image" />
           </div>
           <div className="member-description">
-            <h2>Madison Kipembe</h2>
-            <p>Secretary</p>
+            <h2>Kevin Mubiala Ndeke</h2>
+            <p>Associate Director International Business Dev.</p>
+          </div>
+        </Col>
+
+        <Col xs={6} md={4} className="team-item">
+          <div className="image-container">
+            <Image src={image1} className="image" />
+          </div>
+          <div className="member-description">
+            <h2>Tycoon Kabuzi</h2>
+            <p>Associate Director Strategy & Advisory</p>
           </div>
         </Col>
       </Row>

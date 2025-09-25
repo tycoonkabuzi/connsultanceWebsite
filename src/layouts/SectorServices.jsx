@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import SecondaryPagesHeader from "../components/SecondaryPagesHeader";
 import background from "../assets/car2.jpg";
+import PublicSector from "../components/PublicSector";
 const SectorServices = () => {
   const title = "GGS Public Sector & Government Services";
   const paragraph =
@@ -14,6 +15,7 @@ const SectorServices = () => {
         paragraph={paragraph}
         background={background}
       />
+      <PublicSector />
       <Footer />
     </>
   );
