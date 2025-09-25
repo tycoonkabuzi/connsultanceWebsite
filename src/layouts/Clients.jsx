@@ -7,7 +7,7 @@ import firstClient from "../assets/firstClient.jpg";
 import secondClient from "../assets/secondClient.jpg";
 import thirdClient from "../assets/thirdClient.jpg";
 import fourthClient from "../assets/fourthClient.png";
-import fithClient from "../assets/fourthClient.png";
+import fifthClient from "../assets/fourthClient.png";
 
 import background from "../assets/car2.jpg";
 
@@ -21,7 +21,7 @@ const Clients = () => {
       src: firstClient,
       alt: "Customer Services Solution Hub",
     },
-    { id: 2, name: "Amazon", src: fithClient, alt: "Amazon logo" },
+    { id: 2, name: "Amazon", src: fifthClient, alt: "Amazon logo" },
     { id: 3, name: "Microsoft", src: secondClient, alt: "Microsoft logo" },
     { id: 4, name: "", src: thirdClient, alt: "Spotify logo" },
     { id: 5, name: "Netflix", src: fourthClient, alt: "Netflix logo" },
