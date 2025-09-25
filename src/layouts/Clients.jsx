@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import SecondaryPagesHeader from "../components/SecondaryPagesHeader";
 import { useLanguage } from "../context/LanguageProvider";
 
-import firstClient from "../assets/firstClient.jpg";
+import firstClient from "../assets/firstClients.jpg";
 import secondClient from "../assets/secondClient.jpg";
 import thirdClient from "../assets/thirdClient.jpg";
 import fourthClient from "../assets/fourthClient.png";
