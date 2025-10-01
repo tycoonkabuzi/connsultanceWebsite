@@ -36,18 +36,14 @@ function CarousselHeader() {
   ];
 
   return (
-    <Carousel data-bs-theme="light">
+    <Carousel fade interval={4000} data-bs-theme="light">
       {slides.map((slide, index) => (
-        <Carousel.Item key={index} className="carousel-image-wrapper">
-          <img
-            className="d-block w-100 carousel-img"
-            src={slide.src}
-            alt={slide.alt}
-          />
-          <Carousel.Caption className="centerCaption">
-            <h1 className="fw-bold">{slide.title}</h1>
+        <Carousel.Item key={index}>
+          <img className="d-block w-100" src={slide.src} alt={slide.alt} />
+          <div className="centerCaption">
+            <h1>{slide.title}</h1>
             <p>{slide.text}</p>
-          </Carousel.Caption>
+          </div>
         </Carousel.Item>
       ))}
     </Carousel>
