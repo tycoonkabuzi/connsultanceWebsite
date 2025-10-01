@@ -4,40 +4,52 @@ import car2 from "../assets/pexels-olly-3769138.jpg";
 import car3 from "../assets/pexels-pixabay-41949.jpg";
 import car4 from "../assets/car4.jpg";
 import { useLanguage } from "../context/LanguageProvider";
+
 function CarousselHeader() {
   const { language, translation } = useLanguage();
+
+  const slides = [
+    {
+      src: car1,
+      alt: "City lights at night",
+      title: translation[language].carrouselTitleOne,
+      text: translation[language].carrouselParagraphOne,
+    },
+    {
+      src: car2,
+      alt: "Person working on laptop",
+      title: translation[language].carrouselTitleTwo,
+      text: translation[language].carrouselParagraphTwo,
+    },
+    {
+      src: car3,
+      alt: "Nature and mountains",
+      title: translation[language].carrouselTitleThree,
+      text: translation[language].carrouselParagraphThree,
+    },
+    {
+      src: car4,
+      alt: "Business meeting",
+      title: translation[language].carrouselTitleFour,
+      text: translation[language].carrouselParagraphFour,
+    },
+  ];
+
   return (
     <Carousel data-bs-theme="light">
-      <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car1} alt="First slide" />
-        <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitleOne}</h1>
-          <p>{translation[language].carrouselParagraphOne}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car2} alt="First slide" />
-        <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitleTwo}</h1>
-          <p>{translation[language].carrouselParagraphTwo}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car3} alt="First slide" />
-        <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitleThree}</h1>
-          <p>{translation[language].carrouselParagraphThree}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item className="carousel-image-wrapper">
-        <img className="d-block w-100 " src={car4} alt="First slide" />
-        <Carousel.Caption className="centerCaption">
-          <h1>{translation[language].carrouselTitleFour}</h1>
-          <p>{translation[language].carrouselParagraphFour}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {slides.map((slide, index) => (
+        <Carousel.Item key={index} className="carousel-image-wrapper">
+          <img
+            className="d-block w-100 carousel-img"
+            src={slide.src}
+            alt={slide.alt}
+          />
+          <Carousel.Caption className="centerCaption">
+            <h1 className="fw-bold">{slide.title}</h1>
+            <p>{slide.text}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

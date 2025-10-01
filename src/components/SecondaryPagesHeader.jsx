@@ -1,10 +1,10 @@
+import React from "react";
+
 const SecondaryPagesHeader = ({ title, paragraph, background }) => {
   return (
-    <div className="mainPagesHeader">
-      <div className="image-header-container">
-        <img src={background} alt="background for the header" />
-      </div>
-      <div className="text-header-container">
+    <div className="carousel-image-wrapper" style={{ height: "400px" }}>
+      <img src={background} alt="background for the header" />
+      <div className="centerCaption">
         <h1>{title}</h1>
         <p>{paragraph}</p>
       </div>
