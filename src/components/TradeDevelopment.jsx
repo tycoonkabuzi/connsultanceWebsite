@@ -1,38 +1,50 @@
+import { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import car3 from "../../src/assets/car3.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const TradeDevelopment = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <div>
-      <Container className="section">
-        <Row>
-          <Col>
+    <div className="section">
+      <Container>
+        <Row className="align-items-center flex-column-reverse flex-md-row mb-5">
+          <Col md={6} data-aos="fade-right">
             <h2>Methodology that Drives Execution</h2>
             <p>
               We use a step-by-step, proven development framework to launch
               products, grow revenues, and facilitate foreign investment. Our
               methodology is practical, ROI-driven, and tailored to your
               industry, region, and goals.
-              <li>
-                🧭 GlobalLaunch™, StrategyBuild™, and Execute360™ — frameworks
-                built for action
-              </li>
-              <li>🧩 Sector-specific strategies for measurable outcomes</li>
-              <li>📊 End-to-end support: from strategy to signing contracts</li>
+              <ul>
+                <li>
+                  🧭 GlobalLaunch™, StrategyBuild™, and Execute360™ — frameworks
+                  built for action
+                </li>
+                <li>🧩 Sector-specific strategies for measurable outcomes</li>
+                <li>
+                  📊 End-to-end support: from strategy to signing contracts
+                </li>
+              </ul>
             </p>
             <Button className="btn-outline" variant="outline-primary">
               Our tools
             </Button>
           </Col>
-          <Col className="imageService">
-            <img src={car3} alt="" />
+          <Col md={6} className="imageService" data-aos="fade-left">
+            <img src={car3} alt="Methodology" />
           </Col>
         </Row>
-        <br /> <br />
-        <Row>
-          <Col className="imageService">
-            <img src={car3} alt="" />
+
+        <Row className="align-items-center flex-column-reverse flex-md-row mb-5">
+          <Col md={6} className="imageService" data-aos="fade-right">
+            <img src={car3} alt="Network" />
           </Col>
-          <Col>
+          <Col md={6} data-aos="fade-left">
             <h2>Local + Global Network</h2>
             <p>
               Our growing network includes trusted consultants, legal experts,
@@ -47,13 +59,13 @@ const TradeDevelopment = () => {
               </ul>
             </p>
             <Button className="btn-outline" variant="outline-primary">
-              Parner Brand
+              Partner Brand
             </Button>
           </Col>
         </Row>
-        <br></br>
-        <Row>
-          <Col>
+
+        <Row className="align-items-center flex-column-reverse flex-md-row mb-5">
+          <Col md={6} data-aos="fade-right">
             <h2>Smart Tools & Strategic Intelligence</h2>
             <p>
               GGS combines human insight with powerful tools to map opportunity,
@@ -76,12 +88,11 @@ const TradeDevelopment = () => {
               </ul>
             </p>
             <Button className="btn-outline" variant="outline-primary">
-              Parner Brand
+              Partner Brand
             </Button>
           </Col>
-
-          <Col className="imageService">
-            <img src={car3} alt="" />
+          <Col md={6} className="imageService" data-aos="fade-left">
+            <img src={car3} alt="Tools & Intelligence" />
           </Col>
         </Row>
       </Container>

@@ -1,13 +1,19 @@
+import { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import car3 from "../assets/car2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ExperienceProcess = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div className="main-experience">
-      {" "}
       <Container className="section">
-        <Row>
-          <Col>
+        <Row className="align-items-center mb-5 flex-column-reverse flex-md-row">
+          <Col md={6} data-aos="fade-right">
             <h2>Why Clients Choose GGS to Grow, Expand, and Lead</h2>
             <p>
               Global Growth Solutions (GGS) is not just another consultancy — we
@@ -23,16 +29,20 @@ const ExperienceProcess = () => {
               Learn more
             </Button>
           </Col>
-          <Col className="imageService">
-            <img src={car3} alt="" />
+          <Col md={6} data-aos="fade-left">
+            <div className="imageService">
+              <img src={car3} alt="Experience Process" />
+            </div>
           </Col>
         </Row>
-        <br /> <br />
-        <Row>
-          <Col className="imageService">
-            <img src={car3} alt="" />
+
+        <Row className="align-items-center flex-column-reverse flex-md-row">
+          <Col md={6} data-aos="fade-right">
+            <div className="imageService">
+              <img src={car3} alt="Experience Process" />
+            </div>
           </Col>
-          <Col>
+          <Col md={6} data-aos="fade-left">
             <h2>Experience That Crosses Borders</h2>
             <p>
               Our founder and core team bring real-world experience, not just
@@ -40,14 +50,14 @@ const ExperienceProcess = () => {
               Africa, and Asia. We know what it takes to enter new markets,
               navigate regulations, and build long-term value from the ground
               up.
-              <ul>
-                <li>Work grounded in various countries</li>
-                <li>
-                  Insights from both multinational firms and frontier economies
-                </li>
-                <li>Private, public, and development sector exposure</li>
-              </ul>
             </p>
+            <ul>
+              <li>Work grounded in various countries</li>
+              <li>
+                Insights from both multinational firms and frontier economies
+              </li>
+              <li>Private, public, and development sector exposure</li>
+            </ul>
             <Button className="btn-outline" variant="outline-primary">
               Learn more
             </Button>
