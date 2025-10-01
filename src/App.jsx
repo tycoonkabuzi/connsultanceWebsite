@@ -20,11 +20,16 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/development" element={<Development />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services/our-services" element={<Services />} />
+        <Route
+          path="/services/sector-government"
+          element={<SectorServices />}
+        />
         <Route path="/strategic" element={<StrategicAdvisory />} />
-        <Route path="/sector" element={<SectorServices />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/clients" element={<Clients />} />
+        {/* Optional 404 */}
+        <Route path="*" element={<ComingSoon />} />
       </Routes>
     </LanguageProvider>
   );
