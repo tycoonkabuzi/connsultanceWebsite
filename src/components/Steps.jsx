@@ -18,10 +18,10 @@ const Steps = () => {
       </div>
 
       <div className="main-right" data-aos="fade-left">
-        <h1>
+        <h2>
           Step 1 – GlobalAssess™ – Assessment of International Potential and
           Readiness
-        </h1>
+        </h2>
         <ul>
           <li>
             Assess internal systems, staff, training, support, Intranet and
@@ -48,7 +48,7 @@ const Steps = () => {
       {/* Step 2 – Floating Card */}
       <div className="bottom-text-steps" data-aos="fade-up">
         <div className="box-text-steps floating-card">
-          <h1>Step 2 – Create International Business Plan</h1>
+          <h2>Step 2 – Create International Business Plan</h2>
           <ul>
             <li>
               Assist with applying for trademarks for high-potential countries
@@ -76,7 +76,7 @@ const Steps = () => {
       {/* Step 3 + Image */}
       <div className="step3-with-image" data-aos="fade-up">
         <div className="main-right" data-aos="fade-left">
-          <h1>Step 3 – Implement the International Plan</h1>
+          <h2>Step 3 – Implement the International Plan</h2>
           <ul>
             <li>
               Assess internal systems, staff, training, support, Intranet and
