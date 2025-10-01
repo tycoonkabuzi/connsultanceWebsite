@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// src/components/NavBar.jsx
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,17 +12,19 @@ import { useLanguage } from "../context/LanguageProvider";
 
 function NavBar() {
   const navigate = useNavigate();
-  const { language, translation, setLanguage } = useLanguage(); // ✅ context
-  const [currentLanguageLabel, setCurrentLanguageLabel] = useState(
-    language === "fr" ? "Fr" : "En"
-  );
+  const { language, translation, changeLanguage } = useLanguage() || {};
 
-  const t = translation[language] || {};
+  const t = (translation && translation[language]) || {};
 
-  const handleLanguageSelect = (langCode, label) => {
-    setCurrentLanguageLabel(label);
-    setLanguage(langCode); // ✅ changes context => updates all translations
-  };
+  // fallback labels
+  const servicesTitle = t.navServices ?? "Services";
+  const ourServicesLabel = t.ourServices ?? "Our services";
+  const sectorGovLabel = t.serviceSector ?? "Sector & Government services";
+  const aboutLabel = t.navAbout ?? "About";
+  const developmentLabel = t.navDevelopment ?? "Development";
+  const strategicLabel = t.navStrategic ?? "Strategic";
+  const clientsLabel = t.navClients ?? "Clients";
+  const contactLabel = t.navContact ?? "Contact";
 
   return (
     <Navbar expand="lg" className="nav-element" sticky="top">
@@ -39,40 +42,41 @@ function NavBar() {
         <Navbar.Collapse id="main-navbar-nav">
           <Nav className="ms-auto align-items-lg-center">
             <Nav.Link as={Link} to="/about" className="link">
-              {t.navAbout}
+              {aboutLabel}
             </Nav.Link>
 
             <Nav.Link as={Link} to="/development" className="link">
-              {t.navDevelopment}
+              {developmentLabel}
             </Nav.Link>
 
-            {/* ✅ Services dropdown now uses your translation keys */}
             <NavDropdown
-              title={t.navServices}
+              title={servicesTitle}
               id="nav-services-dropdown"
               className="link"
               menuVariant="light"
               align="end"
             >
               <NavDropdown.Item as={Link} to="/services/our-services">
-                {t.ourServices}
+                {ourServicesLabel}
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/services/sector-government">
-                {t.serviceSector}
+                {sectorGovLabel}
               </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link as={Link} to="/strategic" className="link">
-              {t.navStrategic}
-            </Nav.Link>
-            <Nav.Link as={Link} to="/clients" className="link">
-              {t.navClients}
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="link">
-              {t.navContact}
+              {strategicLabel}
             </Nav.Link>
 
-            {/* ✅ Language Switcher */}
+            <Nav.Link as={Link} to="/clients" className="link">
+              {clientsLabel}
+            </Nav.Link>
+
+            <Nav.Link as={Link} to="/contact" className="link">
+              {contactLabel}
+            </Nav.Link>
+
+            {/* Language picker */}
             <Dropdown align="end">
               <Dropdown.Toggle
                 id="language-dropdown"
@@ -84,19 +88,19 @@ function NavBar() {
                   style={{ fontSize: "20px", marginRight: "6px" }}
                   icon="material-symbols:globe-asia-sharp"
                 />
-                <span>{currentLanguageLabel}</span>
+                <span>{language === "fr" ? "Fr" : "En"}</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
                 <Dropdown.Item
-                  onClick={() => handleLanguageSelect("en", "En")}
-                  active={currentLanguageLabel === "En"}
+                  onClick={() => changeLanguage("en")}
+                  active={language === "en"}
                 >
                   English (En)
                 </Dropdown.Item>
                 <Dropdown.Item
-                  onClick={() => handleLanguageSelect("fr", "Fr")}
-                  active={currentLanguageLabel === "Fr"}
+                  onClick={() => changeLanguage("fr")}
+                  active={language === "fr"}
                 >
                   Français (Fr)
                 </Dropdown.Item>
