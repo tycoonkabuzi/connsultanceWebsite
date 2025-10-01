@@ -12,6 +12,7 @@ import { LanguageProvider } from "./context/LanguageProvider";
 import ComingSoon from "./components/ComingSoon";
 import Contact from "./layouts/Contact";
 import Clients from "./layouts/Clients";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/clients" element={<Clients />} />
         {/* Optional 404 */}
-        <Route path="*" element={<ComingSoon />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </LanguageProvider>
   );

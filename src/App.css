@@ -1298,3 +1298,69 @@
     padding: 25px 15px;
   }
 }
+
+/*-------------------404-------------------*/
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.notfound-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.notfound-logo {
+  max-width: 150px;
+  width: 30%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.notfound-content h1 {
+  font-size: 6rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.notfound-content p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.btn-back {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  background: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .notfound-content h1 {
+    font-size: 4rem;
+  }
+
+  .notfound-content p {
+    font-size: 1rem;
+  }
+
+  .notfound-logo {
+    max-width: 120px;
+  }
+}

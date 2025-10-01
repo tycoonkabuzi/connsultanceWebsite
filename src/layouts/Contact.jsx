@@ -1,17 +1,23 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser"; // ✅ add EmailJS
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import SecondaryPagesHeader from "../components/SecondaryPagesHeader";
 import { useLanguage } from "../context/LanguageProvider";
 import background from "../assets/car1.jpg";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const { language, translation } = useLanguage();
+  const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -19,8 +25,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
+    setSending(true);
+    setStatus("");
+
+    emailjs
+      .send(
+        "service_5k366w9", // ✅ your Zoho Service ID from EmailJS
+        "template_r9botvc", // ✅ replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: "info@globalgrowthsolutions.org", // ✅ goes to your inbox
+          reply_to: formData.email, // ensures Reply button goes to sender
+        },
+        "-Ll9ex00IvhWBATsp" // ✅ replace with your EmailJS public key
+      )
+      .then(() => {
+        setFormData({ name: "", email: "", message: "" });
+        setStatus("✅ Message sent successfully!");
+      })
+      .catch(() => {
+        setStatus("❌ Failed to send message. Please try again later.");
+      })
+      .finally(() => setSending(false));
   };
 
   return (
@@ -89,9 +117,11 @@ const Contact = () => {
             />
           </div>
 
-          <button type="submit" className="btn-submit">
-            Send
+          <button type="submit" className="btn-submit" disabled={sending}>
+            {sending ? "Sending..." : "Send"}
           </button>
+
+          {status && <p className="form-status">{status}</p>}
         </form>
       </div>
       <Footer />
