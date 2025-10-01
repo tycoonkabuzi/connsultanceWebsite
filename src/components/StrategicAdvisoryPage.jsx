@@ -1,8 +1,23 @@
-import React from "react";
+import { useEffect } from "react";
 
 const StrategicAdvisoryPage = () => {
+  useEffect(() => {
+    const faders = document.querySelectorAll(".fade-in");
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach((fader) => appearOnScroll.observe(fader));
+  }, []);
+
   return (
     <div className="main_strategic">
+      {/* Strategic Details */}
       <div className="strategic_details fade-in">
         <h2>Strategic Advisory Services</h2>
         <p>
@@ -10,12 +25,15 @@ const StrategicAdvisoryPage = () => {
           they just need the right partner to guide the way. At GGS, we support
           companies, public institutions, and investors who already have a
           global vision — but need seasoned strategic advisors to get there.
+        </p>
+        <p>
           Whether you're preparing to enter new markets, improve your expansion
           model, or solve operational challenges abroad, we step in with deep
           insight, tailored support, and expert execution.
         </p>
       </div>
 
+      {/* What We Offer */}
       <div className="main_offers fade-in">
         <h2>What We Offer</h2>
         <div className="offers">
@@ -58,6 +76,7 @@ const StrategicAdvisoryPage = () => {
         </div>
       </div>
 
+      {/* How We Do It */}
       <div className="main_how fade-in">
         <h2>How We Do It</h2>
         <p>

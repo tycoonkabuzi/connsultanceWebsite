@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 
 const ShowCaseService = () => {
   return (
-    <div className="show-case-service">
+    <div className="main-contact-service">
       <h2>Let us know how we can be of service.</h2>
       <p>
         Our team is happy to answer your questions. Contact us today for a
