@@ -60,8 +60,23 @@ export const translation = {
       title: "Testimonials",
       firstTestimony: {
         paragraph:
-          "One reason we work with GGS is because they are the only international franchise consultants with a proven, trademarked going global process. Ned Lyerly",
-        client: "CEO, CKE Restaurants",
+          "One reason we work with GGS is because they are the only international franchise consultants with a proven, trademarked going global process.",
+        client: "Ned Lyerly",
+      },
+      secondTestimony: {
+        paragraph:
+          "Partnering with GGS has been a game changer for us. Their strategic approach and global expertise helped us expand seamlessly into new markets. We truly value their commitment and professionalism.",
+        client: "Waza",
+      },
+      thirdTestimony: {
+        paragraph:
+          "Working with GGS allowed Nkash Holding to structure our franchise model efficiently. Their insights and support throughout the process made international expansion straightforward and sustainable.",
+        client: "Nkash Holding",
+      },
+      fourthTestimony: {
+        paragraph:
+          "GGS provided exceptional guidance that helped us improve our operations and deliver world-class service. Their international perspective and structured process are unmatched.",
+        client: "Customer Service Hub",
       },
     },
 
@@ -142,8 +157,23 @@ export const translation = {
       title: "Témoignages",
       firstTestimony: {
         paragraph:
-          "Une des raisons pour lesquelles nous travaillons avec GGS est qu'ils sont les seuls consultants en franchise internationale à disposer d'un processus d'internationalisation éprouvé et protégé par une marque déposée. Ned Lyerly",
-        client: "PDG, CKE Restaurants",
+          "L’une des raisons pour lesquelles nous travaillons avec GGS est qu’ils sont les seuls consultants en franchise internationale disposant d’un processus de mondialisation éprouvé et déposé.",
+        client: "Ned Lyerly",
+      },
+      secondTestimony: {
+        paragraph:
+          "Collaborer avec GGS a complètement transformé notre approche. Leur stratégie et leur expertise internationale nous ont permis de nous développer sans difficulté sur de nouveaux marchés. Nous apprécions sincèrement leur engagement et leur professionnalisme.",
+        client: "Waza",
+      },
+      thirdTestimony: {
+        paragraph:
+          "Travailler avec GGS a permis à Nkash Holding de structurer efficacement notre modèle de franchise. Leurs conseils et leur accompagnement tout au long du processus ont rendu l’expansion internationale fluide et durable.",
+        client: "Nkash Holding",
+      },
+      fourthTestimony: {
+        paragraph:
+          "GGS nous a fourni des conseils exceptionnels qui nous ont aidés à améliorer nos opérations et à offrir un service de classe mondiale. Leur vision internationale et leur méthode structurée sont inégalées.",
+        client: "Customer Service Hub",
       },
     },
 
