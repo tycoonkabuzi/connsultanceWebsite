@@ -5,9 +5,11 @@ import { Button } from "react-bootstrap";
 
 import car3 from "../assets/car3.jpg";
 import { useLanguage } from "../context/LanguageProvider";
+import { useNavigate } from "react-router-dom";
 
 const ServiceComponent = () => {
   const { language, translation } = useLanguage();
+  const navigate = useNavigate();
 
   return (
     <Container className="section">
@@ -15,7 +17,13 @@ const ServiceComponent = () => {
         <Col data-aos="fade-right" data-aos-delay="100">
           <h2>{translation[language].serviceComponentTitle}</h2>
           <p>{translation[language].serviceComponentParagraph}</p>
-          <Button variant="outline-primary"> Learn more</Button>
+          <Button
+            variant="outline-primary"
+            onClick={() => navigate("/services/our-services")}
+          >
+            {" "}
+            Learn more
+          </Button>
         </Col>
         <Col className="imageService" data-aos="fade-left" data-aos-delay="200">
           <img src={car3} alt="Service" />
