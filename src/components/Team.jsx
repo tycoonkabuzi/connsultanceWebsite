@@ -6,9 +6,9 @@ import Row from "react-bootstrap/Row";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import image1 from "../assets/pexels-chrofit-the-man-to-call-2515393-5615665.jpg";
-import image2 from "../assets/pexels-cottonbro-5378700.jpg";
-import image3 from "../assets/pexels-dziana-hasanbekava-7275385.jpg";
+import kevin from "../assets/kevin.png";
+import john from "../assets/john.png";
+import tycoon from "../assets/tycoon.jpg";
 
 const Team = () => {
   useEffect(() => {
@@ -16,16 +16,16 @@ const Team = () => {
   }, []);
 
   const teamMembers = [
-    { name: "Fabien John Tube", role: "Secretary", image: image1 },
+    { name: "Fabien John Tube", role: "C.E.O", image: john },
     {
       name: "Kevin Mubiala Ndeke",
       role: "Associate Director International Business Dev.",
-      image: image2,
+      image: kevin,
     },
     {
-      name: "Tycoon Kabuzi",
+      name: "Ntwali Kabuzi",
       role: "Associate Director Strategy & Advisory",
-      image: image3,
+      image: tycoon,
     },
   ];
 
