@@ -82,18 +82,31 @@ export const translation = {
 
     //-------------Team-------------
     team: {
-      title: "Our team",
-      positionEsther: "writer",
-      positionMami: "C.E.0",
-      positionIsmael: "P.A",
+      title: "Our Team",
+      positionJohn: "C.E.O",
+      positionKevin: "Associate Director International Business Dev.",
+      positionTycoon: "Associate Director Strategy & Advisory",
     },
 
     //-------------Footer-------------
-    name: "Name",
-    email: "Email address",
-    buttonSub: "Subscribe",
-    address: "9800 MacArthur Blvd. Suite 300, Irvine, California 92612",
-    phone: "Phone: +243 934 234 234",
+    footer: {
+      address: "9800 MacArthur Blvd. Suite 300, Irvine, California 92612",
+      phone: "Phone: +243 934 234 234",
+      email: "Email: info@globalgrowthsolutions.org",
+      links: [
+        "About",
+        "Development",
+        "Services",
+        "Strategic Advisory Services",
+        "Clients",
+        "Contact",
+      ],
+      newsletterTitle: "Sign up for our Newsletter",
+      nameLabel: "Name",
+      emailLabel: "Email address",
+      subscribeButton: "Subscribe",
+      copyright: "Copyrights Global Growth Solutions",
+    },
   },
 
   fr: {
@@ -179,17 +192,30 @@ export const translation = {
 
     //-------------Team-------------
     team: {
-      title: "Notre équipe",
-      positionEsther: "rédactrice",
-      positionMami: "PDG",
-      positionIsmael: "Assistant personnel",
+      title: "Notre Équipe",
+      positionJohn: "Président Directeur Général (C.E.O)",
+      positionKevin: "Directeur Associé – Développement International",
+      positionTycoon: "Directeur Associé – Stratégie et Conseil",
     },
 
     //-------------Footer-------------
-    name: "Nom",
-    email: "Adresse e-mail",
-    buttonSub: "S'abonner",
-    address: "9800 MacArthur Blvd. Suite 300, Irvine, Californie 92612",
-    phone: "Téléphone : +243 934 234 234",
+    footer: {
+      address: "9800 MacArthur Blvd. Bureau 300, Irvine, Californie 92612",
+      phone: "Téléphone : +243 934 234 234",
+      email: "Email : info@globalgrowthsolutions.org",
+      links: [
+        "À propos",
+        "Développement",
+        "Services",
+        "Conseil Stratégique",
+        "Clients",
+        "Contact",
+      ],
+      newsletterTitle: "Inscrivez-vous à notre Newsletter",
+      nameLabel: "Nom",
+      emailLabel: "Adresse e-mail",
+      subscribeButton: "S’abonner",
+      copyright: "Droits d’auteur Global Growth Solutions",
+    },
   },
 };

@@ -9,29 +9,35 @@ import "aos/dist/aos.css";
 import kevin from "../assets/kevin.png";
 import john from "../assets/john.png";
 import tycoon from "../assets/tycoon.jpg";
+import { useLanguage } from "../context/LanguageProvider";
 
 const Team = () => {
+  const { language, translation } = useLanguage();
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
   const teamMembers = [
-    { name: "Fabien John Tube", role: "C.E.O", image: john },
+    {
+      name: "Fabien John Tube",
+      role: translation[language].team.positionJohn,
+      image: john,
+    },
     {
       name: "Kevin Mubiala Ndeke",
-      role: "Associate Director International Business Dev.",
+      role: translation[language].team.positionKevin,
       image: kevin,
     },
     {
       name: "Ntwali Kabuzi",
-      role: "Associate Director Strategy & Advisory",
+      role: translation[language].team.positionTycoon,
       image: tycoon,
     },
   ];
 
   return (
     <Container className="team-main">
-      <h1 data-aos="fade-up">Our Team</h1>
+      <h1 data-aos="fade-up">{translation[language].team.title}</h1>
       <Row>
         {teamMembers.map((member, index) => (
           <Col
