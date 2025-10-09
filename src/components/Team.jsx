@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 import kevin from "../assets/kevin.png";
 import john from "../assets/john.png";
-
+import tycoon from "../assets/tycoon.jpeg";
 import { useLanguage } from "../context/LanguageProvider";
 
 const Team = () => {
@@ -31,6 +31,7 @@ const Team = () => {
     {
       name: "Ntwali Kabuzi",
       role: translation[language].team.positionTycoon,
+      image: tycoon,
     },
   ];
 

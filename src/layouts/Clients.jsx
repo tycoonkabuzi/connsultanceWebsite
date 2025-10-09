@@ -10,6 +10,7 @@ import fourthClient from "../assets/fourthClient.png";
 import fifthClient from "../assets/fourthClient.png";
 
 import background from "../assets/car2.jpg";
+import { useEffect } from "react";
 
 const Clients = () => {
   const { language, translation } = useLanguage();
