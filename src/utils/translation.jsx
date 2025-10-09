@@ -90,7 +90,7 @@ export const translation = {
 
     //-------------Footer-------------
     footer: {
-      address: "9800 MacArthur Blvd. Suite 300, Irvine, California 92612",
+      address: "Przewóz 44/63, Bureau 300 30-716 Kraków, Poland",
       phone: "Phone: +243 934 234 234",
       email: "Email: info@globalgrowthsolutions.org",
       links: [
@@ -200,7 +200,7 @@ export const translation = {
 
     //-------------Footer-------------
     footer: {
-      address: "9800 MacArthur Blvd. Bureau 300, Irvine, Californie 92612",
+      address: "Przewóz 44/63, Bureau 300 30-716 Kraków, Poland",
       phone: "Téléphone : +243 934 234 234",
       email: "Email : info@globalgrowthsolutions.org",
       links: [

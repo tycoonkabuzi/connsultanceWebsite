@@ -1,8 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import car1 from "../assets/pexels-aaditya-arora-188236-592753.jpg";
-import car2 from "../assets/pexels-olly-3769138.jpg";
+
 import car3 from "../assets/pexels-pixabay-41949.jpg";
-import car4 from "../assets/car4.jpg";
+
 import { useLanguage } from "../context/LanguageProvider";
 
 function CarousselHeader() {
@@ -10,13 +9,13 @@ function CarousselHeader() {
 
   const slides = [
     {
-      src: car1,
+      src: car3,
       alt: "City lights at night",
       title: translation[language].carrouselTitleOne,
       text: translation[language].carrouselParagraphOne,
     },
     {
-      src: car2,
+      src: car3,
       alt: "Person working on laptop",
       title: translation[language].carrouselTitleTwo,
       text: translation[language].carrouselParagraphTwo,
@@ -28,7 +27,7 @@ function CarousselHeader() {
       text: translation[language].carrouselParagraphThree,
     },
     {
-      src: car4,
+      src: car3,
       alt: "Business meeting",
       title: translation[language].carrouselTitleFour,
       text: translation[language].carrouselParagraphFour,
