@@ -9,8 +9,12 @@ import ShowCaseService from "../components/ShowCaseService";
 
 import background from "../assets/car4.jpg";
 import { useLanguage } from "../context/LanguageProvider";
+import { useEffect } from "react";
 const About = () => {
   const { language, translation } = useLanguage();
+  useEffect(() => {
+    document.title = "About";
+  }, []); // runs once when the component mounts
 
   return (
     <div>

@@ -7,9 +7,15 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 import background from "../assets/car2.jpg";
+import { useEffect } from "react";
 const Services = () => {
   const title = "Services";
   const paragraph = " Services paragraph text";
+
+  useEffect(() => {
+    document.title = "Services";
+  }, []); // runs once when the component mounts
+
   return (
     <div>
       <NavBar />

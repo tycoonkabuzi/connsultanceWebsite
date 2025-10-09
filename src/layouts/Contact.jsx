@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser"; // ✅ add EmailJS
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -13,6 +13,10 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    document.title = "Contact";
+  }, []); // runs once when the component mounts
 
   const { language, translation } = useLanguage();
   const [sending, setSending] = useState(false);

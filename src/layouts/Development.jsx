@@ -5,9 +5,13 @@ import SecondaryPagesHeader from "../components/SecondaryPagesHeader";
 import Steps from "../components/Steps";
 
 import background from "../assets/car3.jpg";
+import { useEffect } from "react";
 const Development = () => {
   const title = "Development";
   const paragraph = " Development paragraph text";
+  useEffect(() => {
+    document.title = "Development";
+  }, []); // runs once when the component mounts
 
   return (
     <div>

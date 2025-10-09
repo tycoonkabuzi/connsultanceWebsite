@@ -13,6 +13,9 @@ import background from "../assets/car2.jpg";
 
 const Clients = () => {
   const { language, translation } = useLanguage();
+  useEffect(() => {
+    document.title = "Clients";
+  }, []); // runs once when the component mounts
 
   const clientLogos = [
     {

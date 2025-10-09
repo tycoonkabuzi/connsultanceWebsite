@@ -17,6 +17,9 @@ const Home = () => {
       once: true, // only animate once
     });
   }, []);
+  useEffect(() => {
+    document.title = "Home";
+  }, []); // runs once when the component mounts
 
   return (
     <>
