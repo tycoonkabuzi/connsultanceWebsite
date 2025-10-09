@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import SecondaryPagesHeader from "../components/SecondaryPagesHeader";
 import background from "../assets/car2.jpg";
 import PublicSector from "../components/PublicSector";
+import { useEffect } from "react";
 const SectorServices = () => {
   useEffect(() => {
     document.title = "Sector";
