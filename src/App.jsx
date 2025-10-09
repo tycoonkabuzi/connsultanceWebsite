@@ -13,10 +13,12 @@ import ComingSoon from "./components/ComingSoon";
 import Contact from "./layouts/Contact";
 import Clients from "./layouts/Clients";
 import NotFound from "./components/NotFound";
+import ScrollToTop from "./components/ScroolToTop";
 
 function App() {
   return (
     <LanguageProvider>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
