@@ -810,7 +810,7 @@
 }
 
 .info-item svg {
-  color: #0077ff;
+  color: #39d1b8; /* changed to your green */
 }
 
 .contact-form {
@@ -840,7 +840,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #0077ff;
+  border-color: #39d1b8; /* changed to your green */
   outline: none;
 }
 
@@ -852,7 +852,7 @@
 .btn-submit {
   align-self: flex-start;
   padding: 0.9rem 1.5rem;
-  background: #0077ff;
+  background: #39d1b8; /* changed to your green */
   color: #fff;
   font-size: 1rem;
   border: none;
@@ -863,7 +863,7 @@
 }
 
 .btn-submit:hover {
-  background: #005fcc;
+  background: #2fa891; /* darker green on hover */
 }
 
 /*---------------------- Clients Page ----------------*/
