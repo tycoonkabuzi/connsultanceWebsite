@@ -879,28 +879,27 @@
   margin-bottom: 4rem;
 }
 
+/* Headings updated with your green color */
 .clients-page h1,
 .clients-page h2,
 .clients-page h3 {
   font-weight: 700;
   margin-bottom: 1.2rem;
+  color: #46c0a0; /* Updated to brand green */
 }
 
 .clients-page h1 {
   font-size: 2.4rem;
-  color: #0a2a43;
   text-align: center;
 }
 
 .clients-page h2 {
   font-size: 1.8rem;
-  color: #0a2a43;
 }
 
 .clients-page h3 {
   font-size: 1.4rem;
   margin-top: 1.5rem;
-  color: #0056a3;
 }
 
 .clients-page p {
@@ -965,6 +964,7 @@
 
 .clients-testimonials h2 {
   margin-bottom: 2rem;
+  color: #46c0a0; /* Updated to brand green */
 }
 
 .testimonials-grid {
@@ -986,7 +986,7 @@
   margin-top: 1rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0077ff;
+  color: #46c0a0; /* Updated to brand green */
 }
 
 /*---------------------- Public Sector Page ----------------*/
