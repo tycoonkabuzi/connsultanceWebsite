@@ -7,8 +7,8 @@ import firstClient from "../assets/firstClients.jpg";
 import secondClient from "../assets/secondClient.jpg";
 import thirdClient from "../assets/thirdClient.jpg";
 import fourthClient from "../assets/fourthClient.png";
-import fifthClient from "../assets/fourthClient.png";
-
+import fifthClient from "../assets/fifthClient.jpg";
+import sixthClient from "../assets/the71.PNG";
 import background from "../assets/car2.jpg";
 import { useEffect } from "react";
 
@@ -25,10 +25,26 @@ const Clients = () => {
       src: firstClient,
       alt: "Customer Services Solution Hub",
     },
-    { id: 2, name: "Amazon", src: fifthClient, alt: "Amazon logo" },
-    { id: 3, name: "Microsoft", src: secondClient, alt: "Microsoft logo" },
-    { id: 4, name: "", src: thirdClient, alt: "Spotify logo" },
-    { id: 5, name: "Netflix", src: fourthClient, alt: "Netflix logo" },
+    { id: 2, name: "Nkash Tech", src: fourthClient, alt: "Nkash logo" },
+    { id: 3, name: "EDUBRIDGE ERP", src: secondClient, alt: "EDUBRIDGE logo" },
+    {
+      id: 4,
+      name: "Nkash Holding",
+      src: thirdClient,
+      alt: "Nkash holding logo",
+    },
+    {
+      id: 5,
+      name: "The 71 class",
+      src: fifthClient,
+      alt: "the 71class  logo",
+    },
+    {
+      id: 6,
+      name: "The 71 class",
+      src: sixthClient,
+      alt: "the 71class  logo",
+    },
   ];
 
   const testimonials = [
