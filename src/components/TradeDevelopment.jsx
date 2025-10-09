@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import car3 from "../../src/assets/car3.jpg";
+import methodologyDrive from "../assets/methodologyDrive.jpg";
+import network from "../assets/network.jpg";
+import smartTools from "../assets/smartTools.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -36,13 +38,13 @@ const TradeDevelopment = () => {
             </Button>
           </Col>
           <Col md={6} className="imageService" data-aos="fade-left">
-            <img src={car3} alt="Methodology" />
+            <img src={methodologyDrive} alt="Methodology" />
           </Col>
         </Row>
 
         <Row className="align-items-center flex-column-reverse flex-md-row mb-5">
           <Col md={6} className="imageService" data-aos="fade-right">
-            <img src={car3} alt="Network" />
+            <img src={network} alt="Network" />
           </Col>
           <Col md={6} data-aos="fade-left">
             <h2>Local + Global Network</h2>
@@ -92,7 +94,7 @@ const TradeDevelopment = () => {
             </Button>
           </Col>
           <Col md={6} className="imageService" data-aos="fade-left">
-            <img src={car3} alt="Tools & Intelligence" />
+            <img src={smartTools} alt="Tools & Intelligence" />
           </Col>
         </Row>
       </Container>
