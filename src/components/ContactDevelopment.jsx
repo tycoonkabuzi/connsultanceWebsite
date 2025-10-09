@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 
 const ContactDevelopment = () => {
   return (
-    <div className="main-contact-development">
+    <div className="main-contact-service">
       <h1>
         Contact us to get started with developing your custom international
         business plan today.
@@ -12,7 +12,7 @@ const ContactDevelopment = () => {
         begin a conversation.
       </p>
 
-      <Button className="btn-standard">Learn more</Button>
+      <Button className="btn-standard">Contact us</Button>
     </div>
   );
 };

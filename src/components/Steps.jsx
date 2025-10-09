@@ -18,29 +18,29 @@ const Steps = () => {
       </div>
 
       <div className="main-right" data-aos="fade-left">
-        <h2>
-          Step 1 – GlobalAssess™ – Assessment of International Potential and
-          Readiness
-        </h2>
+        <h2>Step 1 – GlobalLaunch™: Assessment of Readiness & Opportunity</h2>
+
         <ul>
           <li>
-            Assess internal systems, staff, training, support, Intranet and
-            marketing programs
+            Assess operational readiness for international expansion (internal
+            systems, team, support, marketing)
+          </li>
+          <li>Conduct a Brand Positioning & Differentiation Audit</li>
+          <li>
+            Define your Global Advantage — what makes your offering viable
+            across borders
+          </li>
+          <li>Develop your Ideal Market Entry Profile (GlobalFit™)</li>
+          <li>
+            Create a strategic international presentation tailored for investors
+            or partners
           </li>
           <li>
-            Develop a 10-year international operations and development projected
-            budget
+            Identify and prioritize high-potential countries through
+            on-the-ground research and testing (GeoScan™)
           </li>
           <li>
-            Identify and prioritize the best countries for the client through
-            EGS GlobalTeam™ testing and GlobalSurvey™
-          </li>
-          <li>
-            Create international slide presentations from client internal slides
-          </li>
-          <li>
-            Develop a profile of the optimal Licensee and license terms –
-            GlobalProfile™
+            Build a 10-year international development budget and ROI forecast
           </li>
         </ul>
       </div>
@@ -48,26 +48,30 @@ const Steps = () => {
       {/* Step 2 – Floating Card */}
       <div className="bottom-text-steps" data-aos="fade-up">
         <div className="box-text-steps floating-card">
-          <h2>Step 2 – Create International Business Plan</h2>
+          <h2>
+            Step 2 – StrategyBuild™: Create the International Business Plan
+          </h2>
           <ul>
+            <li>Assist in trademark and IP preparation for target countries</li>
             <li>
-              Assist with applying for trademarks for high-potential countries
-            </li>
-            <li>Define the development model that works best for client</li>
-            <li>
-              Develop steps to acquire the client international license document
+              Define the best entry model: direct, representation, licensing,
+              partnerships, or PPP
             </li>
             <li>
-              Create/modify materials to present client operations, training,
-              support, marketing as differentiators
+              Build a go-to-market roadmap including branding, onboarding, and
+              operations
             </li>
             <li>
-              Develop a country pro forma unit, licensee and franchisor
-              financial and development model – LicensePro™
+              Structure unit economics and country-level projections
+              (MarketCanvas™)
             </li>
             <li>
-              Identify legal agreements and franchise regulations for priority
-              countries
+              Develop international training, operations, and marketing
+              materials
+            </li>
+            <li>Conduct legal landscape mapping and regulatory review</li>
+            <li>
+              Design tailored investor/licensee offers and support packages
             </li>
           </ul>
         </div>
@@ -76,28 +80,30 @@ const Steps = () => {
       {/* Step 3 + Image */}
       <div className="step3-with-image" data-aos="fade-up">
         <div className="main-right" data-aos="fade-left">
-          <h2>Step 3 – Implement the International Plan</h2>
+          <h2>Step 3 – Execute360™: Implementation & Market Penetration</h2>
           <ul>
             <li>
-              Assess internal systems, staff, training, support, Intranet and
-              marketing programs
+              Represent your offer at international expos, summits, and
+              strategic events
             </li>
             <li>
-              Develop a 10-year international operations and development
-              projected budget
+              Qualify leads and negotiate partnerships, representation, or
+              licensing deals
             </li>
             <li>
-              Identify and prioritize the best countries for the client through
-              EGS GlobalTeam™ testing and GlobalSurvey™
+              Support contract drafting, negotiations, and regulatory alignment
             </li>
             <li>
-              Create international slide presentations from client internal
-              slides
+              Provide progress dashboards, reporting, and campaign tracking
             </li>
             <li>
-              Develop a profile of the optimal Licensee and license terms –
-              GlobalProfile™
+              Adjust priorities and markets based on live feedback and
+              opportunities
             </li>
+            <li>
+              Act as your outsourced international development team or advisor
+            </li>
+            <li>Deliver quarterly strategy reviews with GGS management</li>
           </ul>
         </div>
 
