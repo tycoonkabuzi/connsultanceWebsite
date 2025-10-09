@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import image1 from "../assets/pexels-thirdman-5256523.jpg";
-import image2 from "../assets/pexels-thirdman-5060985.jpg";
-import image3 from "../assets/pexels-dziana-hasanbekava-7275385.jpg";
+import image1 from "../assets/businessExpension.jpg";
+import image2 from "../assets/internationalSale.jpg";
+import image3 from "../assets/revenueGrowth.jpg";
 import image4 from "../assets/pexels-mikhail-nilov-6893955.jpg";
-import image5 from "../assets/pexels-marcus-aurelius-4063856.jpg";
-import image6 from "../assets/pexels-gabby-k-5876695.jpg";
+import image5 from "../assets/teamCollaborating.jpg";
+import image6 from "../assets/analysingReports.jpg";
 
 const ServicesDetails = () => {
   useEffect(() => {

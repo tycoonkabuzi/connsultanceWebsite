@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
-
+import { useNavigate } from "react-router-dom";
 const ContactDevelopment = () => {
+  const navigate = useNavigate();
   return (
     <div className="main-contact-service">
       <h1>
@@ -12,7 +13,9 @@ const ContactDevelopment = () => {
         begin a conversation.
       </p>
 
-      <Button className="btn-standard">Contact us</Button>
+      <Button className="btn-standard" onClick={() => navigate("/contact")}>
+        Contact us
+      </Button>
     </div>
   );
 };
