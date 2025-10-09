@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import car3 from "../assets/car2.jpg";
+import whyClients from "../assets/why-clients-choose.jpg";
+import experienceBorders from "../assets/experience-borders.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,7 +32,7 @@ const ExperienceProcess = () => {
           </Col>
           <Col md={6} data-aos="fade-left">
             <div className="imageService">
-              <img src={car3} alt="Experience Process" />
+              <img src={whyClients} alt="clients shaking hands" />
             </div>
           </Col>
         </Row>
@@ -39,7 +40,7 @@ const ExperienceProcess = () => {
         <Row className="align-items-center flex-column-reverse flex-md-row">
           <Col md={6} data-aos="fade-right">
             <div className="imageService">
-              <img src={car3} alt="Experience Process" />
+              <img src={experienceBorders} alt="globe" />
             </div>
           </Col>
           <Col md={6} data-aos="fade-left">
