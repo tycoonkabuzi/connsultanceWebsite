@@ -3,7 +3,7 @@ export const translation = {
     // ------------ Nav-----------------
     navAbout: "About",
     navDevelopment: "Development",
-    navServices: "services",
+    navServices: "Services",
     ourServices: "Our services",
     serviceSector: "Sector & Government services",
     navStrategic: "  Strategic Advisory Services",
