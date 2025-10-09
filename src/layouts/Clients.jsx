@@ -7,7 +7,7 @@ import firstClient from "../assets/firstClients.jpg";
 import secondClient from "../assets/secondClient.jpg";
 import thirdClient from "../assets/thirdClient.jpg";
 import fourthClient from "../assets/fourthClient.png";
-import fifthClients from "../assets/fifthClients.JPG";
+import fifthClients from "../assets/fifthClient.jpg";
 import sixthClient from "../assets/the71.PNG";
 import background from "../assets/car2.jpg";
 import { useEffect } from "react";
