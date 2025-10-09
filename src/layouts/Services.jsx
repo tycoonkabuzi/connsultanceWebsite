@@ -10,7 +10,7 @@ import background from "../assets/car2.jpg";
 import { useEffect } from "react";
 const Services = () => {
   const title = "Services";
-  const paragraph = " Services paragraph text";
+  const paragraph = " Helping your business grow globally.";
 
   useEffect(() => {
     document.title = "Services";

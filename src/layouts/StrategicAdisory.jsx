@@ -12,7 +12,8 @@ const StrategicAdvisory = () => {
   }, []); // runs once when the component mounts
 
   const title = "Strategic Advisory Services";
-  const paragraph = " Strategic text to be displayed here";
+  const paragraph =
+    " Providing expert guidance to drive informed decisions and global growth.";
   return (
     <>
       <NavBar />
