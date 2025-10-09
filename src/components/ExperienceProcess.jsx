@@ -4,12 +4,13 @@ import whyClients from "../assets/why-clients-choose.jpg";
 import experienceBorders from "../assets/experience-borders.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const ExperienceProcess = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
-
+  const navigate = useNavigate();
   return (
     <div className="main-experience">
       <Container className="section">
@@ -26,7 +27,11 @@ const ExperienceProcess = () => {
               scale internationally, or a government aiming to attract
               investment and digitize public services — GGS delivers results.
             </p>
-            <Button className="btn-outline" variant="outline-primary">
+            <Button
+              className="btn-outline"
+              variant="outline-primary"
+              onClick={() => navigate("/development")}
+            >
               Learn more
             </Button>
           </Col>
@@ -59,7 +64,11 @@ const ExperienceProcess = () => {
               </li>
               <li>Private, public, and development sector exposure</li>
             </ul>
-            <Button className="btn-outline" variant="outline-primary">
+            <Button
+              className="btn-outline"
+              variant="outline-primary"
+              onClick={() => navigate("/development")}
+            >
               Learn more
             </Button>
           </Col>

@@ -5,12 +5,14 @@ import network from "../assets/network.jpg";
 import smartTools from "../assets/smartTools.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const TradeDevelopment = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  const navigate = useNavigate();
   return (
     <div className="section">
       <Container>
@@ -33,7 +35,11 @@ const TradeDevelopment = () => {
                 </li>
               </ul>
             </p>
-            <Button className="btn-outline" variant="outline-primary">
+            <Button
+              className="btn-outline"
+              variant="outline-primary"
+              onClick={() => navigate("/strategic")}
+            >
               Our tools
             </Button>
           </Col>
@@ -60,7 +66,11 @@ const TradeDevelopment = () => {
                 <li>🤝 Multilingual support and cross-border coordination</li>
               </ul>
             </p>
-            <Button className="btn-outline" variant="outline-primary">
+            <Button
+              className="btn-outline"
+              variant="outline-primary"
+              onClick={() => navigate("/clients")}
+            >
               Partner Brand
             </Button>
           </Col>
@@ -89,7 +99,11 @@ const TradeDevelopment = () => {
                 <li>🤝 Multilingual support and cross-border coordination</li>
               </ul>
             </p>
-            <Button className="btn-outline" variant="outline-primary">
+            <Button
+              className="btn-outline"
+              variant="outline-primary"
+              onClick={() => navigate("/clients")}
+            >
               Partner Brand
             </Button>
           </Col>
