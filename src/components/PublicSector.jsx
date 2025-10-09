@@ -8,13 +8,13 @@ import { useLanguage } from "../context/LanguageProvider";
 import background from "../assets/car2.jpg";
 
 // ✅ Import related images
-import image1 from "../assets/car3.jpg";
-import image2 from "../assets/car3.jpg";
-import image3 from "../assets/car3.jpg";
-import image4 from "../assets/car3.jpg";
-import image5 from "../assets/car3.jpg";
-import image6 from "../assets/car3.jpg";
-import image7 from "../assets/car3.jpg";
+import image1 from "../assets/FDI.jpg";
+import image2 from "../assets/successBusiness.jpg";
+import image3 from "../assets/partnership.jpg";
+import image4 from "../assets/countryBranding.jpg";
+import image5 from "../assets/publicSectorInovation.jpg";
+import image6 from "../assets/digitalPublic.jpg";
+import image7 from "../assets/investment.jpg";
 const PublicSector = () => {
   const { language, translation } = useLanguage();
 

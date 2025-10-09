@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import imageStep from "../assets/pexels-cottonbro-5378700.jpg";
+import imageStep from "../assets/checklist.jpg";
+import imageStep2 from "../assets/strategy.jpg";
 
 const Steps = () => {
   useEffect(() => {
@@ -109,7 +110,7 @@ const Steps = () => {
 
         <div className="second-part" data-aos="fade-right">
           <div className="second">
-            <img src={imageStep} alt="Step 3 illustration" />
+            <img src={imageStep2} alt="Step 3 illustration" />
           </div>
         </div>
       </div>
